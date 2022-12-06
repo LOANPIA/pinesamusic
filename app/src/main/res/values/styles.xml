@@ -7,9 +7,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="MyToolbar" parent="ThemeOverlay.AppCompat.Light">
-        <item name="android:textColorSecondary">@color/white</item>
-        <item name="android:colorBackground">@color/white</item>
-        <item name="popupMenuStyle">@style/ThemeOverlay.AppCompat.Light</item>
+    <style name="MyToolbar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
     </style>
 </resources>

@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.pinesamusic.adapter.MusicAdapter;
+import com.example.pinesamusic.helper.Helper;
 import com.example.pinesamusic.model.Music;
 import com.google.android.material.navigation.NavigationView;
 
@@ -111,14 +112,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void loadMusic(){
-        list.add(new Music("","","","",""));
-        list.add(new Music("","","","",""));
-        list.add(new Music("","","","",""));
-        list.add(new Music("","","","",""));
-        list.add(new Music("","","","",""));
-        list.add(new Music("","","","",""));
-        list.add(new Music("","","","",""));
-
+        list.clear();
+        musicAdapter.notifyDataSetChanged();
+        list.addAll(Helper.allMusic);
         musicAdapter.notifyDataSetChanged();
     }
 
