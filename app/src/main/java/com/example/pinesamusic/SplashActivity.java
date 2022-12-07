@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.loader.content.AsyncTaskLoader;
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -16,7 +17,7 @@ import android.os.PersistableBundle;
 
 import com.example.pinesamusic.helper.Helper;
 
-import java.util.jar.Manifest;
+
 
 public class SplashActivity extends AppCompatActivity {
 
